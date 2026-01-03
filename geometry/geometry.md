@@ -70,9 +70,9 @@ if (sign(AB ^ AP) == 0 && sign(AP * AB) >= 0 && sign(BA * BP) >= 0) {
 
 Вычисляется из площади треугольника, образованного точками $A$ и $B$, которые задают прямую, и точкой $P$.
 
-$S_{\triangle ABP} = \dfrac{1}{2} |AB| \cdot |PH|$, также $S_{\triangle ABP} = \dfrac{1}{2} (\vec{AB} \times \vec{AP})$.
+$S_{\triangle ABP} = \frac{1}{2} |AB| \cdot |PH|$, также $S_{\triangle ABP} = \frac{1}{2} (\vec{AB} \times \vec{AP})$.
 
-Тогда $|PH| = \dfrac{|\vec{AB} \times \vec{AP}|}{|AB|}$.
+Тогда $|PH| = \frac{|\vec{AB} \times \vec{AP}|}{|AB|}$.
 
 ```c++
 long double dist = abs(AB ^ AP) / AB.len();
