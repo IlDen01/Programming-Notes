@@ -94,3 +94,16 @@ if (AB * AP < 0) {
 ```
 
 Для проверки отрезка нужно аналогично проверить другой конец.
+
+## Пересечение отрезков.
+
+Чтобы отрезки пересекались $sign(\vec{AB} \times \vec{AD}) \cdot sign(\vec{AB} \times \vec{AC}) \leqslant 0$,
+$sign(\vec{CD} \times \vec{CA}) \cdot sign(\vec{CD} \times \vec{CD}) \leqslant 0$ и $max(L) \leqslant min(R)$.
+
+```c++
+if (sign(AB ^ AD) * sign(AB ^ AC) <= 0 && sign(CD ^ CA) * sign(CD ^ CB) <= 0 && max(L) <= min(R)) {
+    return true;
+} else {
+    return false;
+}
+```
