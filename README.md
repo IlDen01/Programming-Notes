@@ -2,4 +2,4 @@
 
 # Темы.
 
-## [Геометрия](geometry/geometry.md).
+## [Геометрия.](geometry/geometry.md)
