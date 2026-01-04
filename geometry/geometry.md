@@ -98,10 +98,12 @@ if (AB * AP < 0) {
 ## Пересечение отрезков.
 
 Чтобы отрезки пересекались $sign(\vec{AB} \times \vec{AD}) \cdot sign(\vec{AB} \times \vec{AC}) \leqslant 0$,
-$sign(\vec{CD} \times \vec{CA}) \cdot sign(\vec{CD} \times \vec{CD}) \leqslant 0$ и $max(L) \leqslant min(R)$.
+$sign(\vec{CD} \times \vec{CA}) \cdot sign(\vec{CD} \times \vec{CD}) \leqslant 0$, $max(L_x) \leqslant min(R_x)$
+и $max(L_y) \leqslant min(R_y)$.
 
 ```c++
-if (sign(AB ^ AD) * sign(AB ^ AC) <= 0 && sign(CD ^ CA) * sign(CD ^ CB) <= 0 && max(L) <= min(R)) {
+if (sign(AB ^ AD) * sign(AB ^ AC) <= 0 && sign(CD ^ CA) * sign(CD ^ CB) <= 0 &&
+    max(L_x) <= min(R_x) && max(L_y) <= min(R_y)) {
     return true;
 } else {
     return false;

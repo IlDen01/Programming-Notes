@@ -8,9 +8,7 @@ struct Point {
     Point(const long double x, const long double y) : x(x), y(y) {
     }
 
-    Point(const Point &p_1, const Point &p_2) {
-        x = p_2.x - p_1.x;
-        y = p_2.y - p_1.y;
+    Point(const Point &p_1, const Point &p_2) : x(p_2.x - p_1.x), y(p_2.y - p_1.y) {
     }
 
     [[nodiscard]] long double len2() const { return x * x + y * y; }
