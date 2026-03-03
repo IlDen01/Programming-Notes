@@ -109,3 +109,17 @@ if (sign(AB ^ AD) * sign(AB ^ AC) <= 0 && sign(CD ^ CA) * sign(CD ^ CB) <= 0 &&
     return false;
 }
 ```
+
+## Уравнение прямой.
+
+```c++
+long double k_AB = (B.y - A.y) / (B.x - A.x);
+long double b_AB = A.y - k_AB * A.x;
+```
+
+## Пересечение прямых.
+
+```c++
+const long double x = (b_CD - b_AB) / (k_AB - k_CD);
+const long double y = k_AB * x + b_AB;
+```

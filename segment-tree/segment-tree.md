@@ -10,8 +10,8 @@ struct Node {
     long long value;
 };
 
-vector<Node> tree;
-vector<int> a;
+std::vector<Node> tree;
+std::vector<int> a;
 ```
 
 ## Код.
@@ -32,7 +32,6 @@ void update(const int v) {
 void build(const int v, const int l, const int r) {
     tree[v].l = l;
     tree[v].r = r;
-    tree[v].lazy = 0;
 
     if (r - l == 1) {
         tree[v].value = a[l];

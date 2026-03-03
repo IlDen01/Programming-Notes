@@ -1,7 +1,9 @@
-# Конспекты и заметки по программированию пользователя IlDen01.
+# Конспекты и заметки по программированию пользователя IlDen01
 
-# Темы.
+## Темы
 
-## [Геометрия.](geometry/geometry.md)
+### [Геометрия.](geometry/geometry.md)
 
-## [Дерево Отрезков.](segment-tree/segment-tree.md)
+### [Дерево Отрезков.](segment-tree/segment-tree.md)
+
+### [Sparse Table.](sparse-table/sparse-table.md)
