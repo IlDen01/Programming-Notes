@@ -1,6 +1,6 @@
-```c++
-#include <bits/stdc++.h>
+# LA
 
+```c++
 constexpr int MAXLOG = 20;
 
 int n; // количество вершин

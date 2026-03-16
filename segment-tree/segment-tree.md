@@ -1,6 +1,6 @@
-# Дерево Отрезков.
+# Дерево Отрезков
 
-## База.
+## База
 
 На полуинтервалах, номеруем с 0.
 
@@ -14,7 +14,7 @@ std::vector<Node> tree;
 std::vector<int> a;
 ```
 
-## Код.
+## Код
 
 НУО код для поиска максимума на отрезке, реализации для других задач пишутся аналогично.
 
@@ -48,9 +48,9 @@ void build(const int v, const int l, const int r) {
 
 Три случая:
 
- - $l \leqslant tree[v].l$ && $tree[v].r \leqslant r$ $\rightarrow tree[v].value$
- - $tree[v].r \leqslant l$ || $r \leqslant tree[v].l$ $\rightarrow -INF$
- - Иначе $\rightarrow max(get(2v + 1, l, r), get(2v + 2, l, r))$
+- $l \leqslant tree[v].l$ && $tree[v].r \leqslant r$ $\rightarrow tree[v].value$
+- $tree[v].r \leqslant l$ || $r \leqslant tree[v].l$ $\rightarrow -INF$
+- Иначе $\rightarrow max(get(2v + 1, l, r), get(2v + 2, l, r))$
 
 ```c++
 long long get_max_value(const int v, const int l, const int r) {
@@ -87,7 +87,7 @@ void add(const int v, const int i, const int k) {
 }
 ```
 
-## Массовые операции.
+## Массовые операции
 
 Ниже представлена ленивая реализация.
 

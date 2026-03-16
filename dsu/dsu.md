@@ -1,3 +1,5 @@
+# DSU
+
 ```c++
 std::vector<int> parents, sizes;
 

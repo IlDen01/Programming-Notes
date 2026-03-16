@@ -1,3 +1,5 @@
+# Kruskals Algorithm
+
 ```c++
 void solution() {
     int n, m;

@@ -1,3 +1,5 @@
+# Fenwick tree
+
 ```c++
 struct fenwick {
     std::vector<long long> els;
@@ -21,7 +23,7 @@ struct fenwick {
 
     explicit fenwick(const long long size) : els(size, 0), t(size, 0) {}
 
-    // в этой вариации происходит замена элемента, а не прибавление или вычетание
+    // в этой вариации происходит замена элемента, а не прибавление или вычитание
     void update(long long ind, const long long new_val) {
         const long long delta = new_val - els[ind];
         els[ind] = new_val;
