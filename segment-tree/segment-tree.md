@@ -22,7 +22,7 @@ std::vector<int> a;
 
 ```c++
 void update(const int v) {
-    tree[v].value = max(tree[2 * v + 1].value, tree[2 * v + 2].value);
+    tree[v].value = std::max(tree[2 * v + 1].value, tree[2 * v + 2].value);
 }
 ```
 
@@ -62,7 +62,7 @@ long long get_max_value(const int v, const int l, const int r) {
         return LLONG_MIN;
     }
 
-    return max(get_max_value(v * 2 + 1, l, r), get_max_value(v * 2 + 2, l, r));
+    return std::max(get_max_value(v * 2 + 1, l, r), get_max_value(v * 2 + 2, l, r));
 }
 ```
 
@@ -147,7 +147,7 @@ long long get_max_value(const int v, const int l, const int r) {
     }
 
     push(v);
-    return max(get_max_value(v * 2 + 1, l, r), get_max_value(v * 2 + 2, l, r));
+    return std::max(get_max_value(v * 2 + 1, l, r), get_max_value(v * 2 + 2, l, r));
 }
 ```
 

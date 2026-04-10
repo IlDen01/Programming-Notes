@@ -19,3 +19,5 @@
 ### [СНМ.](dsu/dsu.md)
 
 ### [Алгоритм Краскала.](kruskals-algorithm/kruskals-algorithm.md)
+
+### [Heavy-Light декомпозиция (HLD).](heavy-light-decomposition/heavy-light-decomposition.md)
