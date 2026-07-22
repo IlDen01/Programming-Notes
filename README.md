@@ -8,11 +8,11 @@
 
 ### [Sparse Table.](sparse-table/sparse-table.md)
 
-### LA и LCA
-
-#### [LA](la-lca/la.md)
+### LCA и LA
 
 #### [LCA](la-lca/lca.md)
+
+#### [LA](la-lca/la.md)
 
 ### [Дерево Фенвика.](fenwick/fenwick.md)
 
@@ -21,3 +21,9 @@
 ### [Алгоритм Краскала.](kruskals-algorithm/kruskals-algorithm.md)
 
 ### [Heavy-Light декомпозиция (HLD).](heavy-light-decomposition/heavy-light-decomposition.md)
+
+### [Декартово Дерево (Cartesian Tree).](cartesian-tree/cartesian-tree.md)
+
+### [Корневая Оптимизация (Root Optimization).](root-optimization/root-optimization.md)
+
+### [Алгоритм Мо (Mo's Algorithm).](mo's-algorithm/mo's-algorithm.md)
