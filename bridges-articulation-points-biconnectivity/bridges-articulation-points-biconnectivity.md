@@ -77,11 +77,10 @@ $up[v] > depth[u]$
 
 1. Во время спуска в DFS кладём текущую вершину `u` в стек.
 2. Когда мы заканчиваем обрабатывать вершину `u`, проверяем условие:
-   $up[u] == depth[u]$
-3. Это означает, что из поддерева `u` нет обратных рёбер строго выше `u`.
-4. Следовательно, ребро, входящее в `u` сверху, является мостом (либо `u` — корень). Все вершины в стеке вплоть до `u`
+   $up[u] == depth[u]$ это означает, что из поддерева `u` нет обратных рёбер строго выше `u`.
+3. Следовательно, ребро, входящее в `u` сверху, является мостом (либо `u` — корень). Все вершины в стеке вплоть до `u`
    образуют одну КРД.
-5. Извлекаем их из стека и помечаем единым идентификатором компоненты.
+4. Извлекаем их из стека и помечаем единым идентификатором компоненты.
 
 ---
 
@@ -112,12 +111,12 @@ $O (V + E)$
 ### 1. Поиск мостов
 
 ```c++
+std::vector<std::vector<std::pair<int, int>>> g; // g[u] хранит пары {v, edge_id}
 std::vector<int> depth, up;
 std::vector<bool> used;
 std::vector<int> bridges; // сохраняем индексы рёбер-мостов
 
-// g[u] хранит пары {v, edge_id}
-void dfs_bridges(int u, int pid = -1, int d = 0) {
+void dfs_bridges(const int u, const int pid = -1, const int d = 0) {
     used[u] = true;
     depth[u] = up[u] = d;
     
@@ -141,11 +140,11 @@ void dfs_bridges(int u, int pid = -1, int d = 0) {
 ### 2. Поиск точек сочленения
 
 ```c++
+std::vector<std::set<int>> g;
 std::vector<int> depth, up;
-std::vector<bool> used;
-std::vector<bool> is_cutpoint;
+std::vector<bool> used, is_cutpoint;
 
-void dfs_cutpoints(int u, int p = -1, int d = 0) {
+void dfs_cutpoints(const int u, const int p = -1, const int d = 0) {
     used[u] = true;
     depth[u] = up[u] = d;
     int children = 0;
@@ -191,7 +190,7 @@ void dfs_ebc(int u, int p = -1, int d = 0) {
         if (used[v]) {
             up[u] = std::min(up[u], depth[v]);
         } else {
-            dfs_ebc(v, id, d + 1);
+            dfs_ebc(v, u, d + 1);
             up[u] = std::min(up[u], up[v]);
         }
     }

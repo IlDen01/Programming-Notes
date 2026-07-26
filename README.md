@@ -27,3 +27,7 @@
 ### [Корневая Оптимизация (Root Optimization).](root-optimization/root-optimization.md)
 
 ### [Алгоритм Мо (Mo's Algorithm).](mo's-algorithm/mo's-algorithm.md)
+
+### [Мосты, точки сочленения и двусвязность (Bridges, Articulation Points, Biconnectivity).](bridges-articulation-points-biconnectivity/bridges-articulation-points-biconnectivity.md)
+
+### [Компоненты сильной связности, 2-SAT, Эйлеровость (Strong connected components, 2-SAT, Eulerian).](scc-2sat-eulerian/scc-2sat-eulerian.md)
