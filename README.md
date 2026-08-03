@@ -31,3 +31,15 @@
 ### [Мосты, точки сочленения и двусвязность (Bridges, Articulation Points, Biconnectivity).](bridges-articulation-points-biconnectivity/bridges-articulation-points-biconnectivity.md)
 
 ### [Компоненты сильной связности, 2-SAT, Эйлеровость (Strong connected components, 2-SAT, Eulerian).](scc-2sat-eulerian/scc-2sat-eulerian.md)
+
+### [Паросочетания (Pairing).](pairing/pairing.md)
+
+### Строки
+
+#### [Z-функция (Z-function).](strings/z-function.md)
+
+#### [Префикс-функция (Prefix-function).](strings/prefix-function.md)
+
+#### [Алгоритм Манакера (Manacher's Algorithm).](strings/manacher's-algorithm.md)
+
+### [Динамическое программирование (Dynamic Programming).](dynamic-programming/dynamic-programming.md)
